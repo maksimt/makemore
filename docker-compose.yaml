@@ -8,3 +8,10 @@ services:
       - "8888:8888"
     volumes:
       - "$PWD:/home/jovyan/work"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [ gpu ]
