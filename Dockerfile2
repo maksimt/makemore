@@ -1,0 +1,3 @@
+FROM tensorflow/tensorflow:2.15.0-jupyter
+
+RUN python3 -m pip install --quiet tensorboard

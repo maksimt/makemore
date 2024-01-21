@@ -1,3 +1,5 @@
 .ipynb*
 ._*
 models
+logs
+runs
